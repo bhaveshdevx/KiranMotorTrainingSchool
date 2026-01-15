@@ -33,7 +33,7 @@ const Contact = () => {
             );
 
             alert('Thank you! We will call you back shortly.');
-            setFormData({ name: '', mobile: '', vehicle: 'Car' });
+            setFormData({ name: '', mobile: '', vehicle: 'Car License' });
         } catch (err) {
             console.error('Error submitting form:', err);
             alert('Something went wrong. Please try again.');
