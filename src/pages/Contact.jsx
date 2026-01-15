@@ -6,7 +6,7 @@ const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
         mobile: '',
-        vehicle: 'Car',
+        vehicle: 'Car License',
     });
 
     const handleChange = (e) => {
