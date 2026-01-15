@@ -45,11 +45,11 @@ const ContactWithFrame = () => {
                 <div className="mt-8 text-center">
                     <p className="text-gray-500 mb-3 text-sm">Facing issues with the form?</p>
                     <a
-                        href="tel:+919876543210"
+                        href="tel:+917045638762"
                         className="inline-flex items-center justify-center gap-3 bg-brand-black hover:bg-gray-800 text-white text-lg font-bold py-4 px-8 rounded-xl shadow-lg transition-transform transform hover:scale-[1.02] w-full md:w-auto min-h-[60px]"
                     >
                         <Phone size={24} className="text-brand-yellow" />
-                        Call Owner: +91-9876543210
+                        Call Owner: +91-7045638762
                     </a>
                 </div>
 

@@ -69,7 +69,7 @@ const Navbar = () => {
                     {/* Mobile Menu Button */}
                     <div className="md:hidden flex items-center gap-4">
                         <a
-                            href="https://wa.me/919876543210?text=Hello%20I%20am%20interested%20in%20your%20services"
+                            href="https://wa.me/917045638762?text=Hello%20I%20am%20interested%20in%20your%20services"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-green-600 text-white p-2 rounded-full min-h-[48px] min-w-[48px] flex items-center justify-center"
@@ -78,7 +78,7 @@ const Navbar = () => {
                         </a>
 
                         <a
-                            href="tel:+919876543210"
+                            href="tel:+917045638762"
                             className="bg-green-600 text-white p-2 rounded-full min-h-[48px] min-w-[48px] flex items-center justify-center"
                             aria-label="Call Now"
                         >
