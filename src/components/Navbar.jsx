@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Phone, MessageCircle } from 'lucide-react';
+import { Menu, X, Phone, MessageCircle, MapPin } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import UnderConstruction from './UnderConstruction';
 import logo from '../assets/images/logo-3.png';
@@ -39,15 +39,10 @@ const Navbar = () => {
                                 {link.name}
                             </Link>
                         ))}
-                        <a
-                            href="tel:+919876543210" // Replace with actual number if known, using placeholder
-                            className=""
-                        >
-                            <Phone color="darkgreen" size={18} />
-                        </a>
+
 
                         <a
-                            href="https://wa.me/919876543210?text=Hello%20I%20am%20interested%20in%20your%20services"
+                            href="https://wa.me/917045638762?text=Hello%20I%20am%20interested%20in%20your%20services"
                             target="_blank"
                             rel="noopener noreferrer"
                             className=""
@@ -55,10 +50,33 @@ const Navbar = () => {
                             <MessageCircle color="green" size={18} />
                         </a>
 
+                        <a
+                            href="tel:+917045638762"
+                            className=""
+                        >
+                            <Phone color="darkgreen" size={18} />
+                        </a>
+
+                        <a
+                            href="https://www.google.com/maps/dir//Kiran+Motor+Training+School,+Devichapada,+Taloja,+Panvel,+Navi+Mumbai,+Maharashtra+410208/@19.0717489,73.1400801,88m/data=!3m1!1e3!4m16!1m7!3m6!1s0x3be7ebd3d21315eb:0x9347748f5219ceec!2sKiran+Motor+Training+School!8m2!3d19.0718375!4d73.1400878!16s%2Fg%2F11t49_29jv!4m7!1m0!1m5!1m1!1s0x3be7ebd3d21315eb:0x9347748f5219ceec!2m2!1d73.1400878!2d19.0718375?entry=ttu&g_ep=EgoyMDI2MDExMS4wIKXMDSoASAFQAw%3D%3D"
+                            className=""
+                        >
+                            <MapPin color="green" size={18} />
+                        </a>
+
                     </div>
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden flex items-center gap-4">
+                        <a
+                            href="https://wa.me/919876543210?text=Hello%20I%20am%20interested%20in%20your%20services"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-green-600 text-white p-2 rounded-full min-h-[48px] min-w-[48px] flex items-center justify-center"
+                        >
+                            <MessageCircle size={18} />
+                        </a>
+
                         <a
                             href="tel:+919876543210"
                             className="bg-green-600 text-white p-2 rounded-full min-h-[48px] min-w-[48px] flex items-center justify-center"
@@ -67,13 +85,12 @@ const Navbar = () => {
                             <Phone size={20} />
                         </a>
 
+
                         <a
-                            href="https://wa.me/919876543210?text=Hello%20I%20am%20interested%20in%20your%20services"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="https://www.google.com/maps/dir//Kiran+Motor+Training+School,+Devichapada,+Taloja,+Panvel,+Navi+Mumbai,+Maharashtra+410208/@19.0717489,73.1400801,88m/data=!3m1!1e3!4m16!1m7!3m6!1s0x3be7ebd3d21315eb:0x9347748f5219ceec!2sKiran+Motor+Training+School!8m2!3d19.0718375!4d73.1400878!16s%2Fg%2F11t49_29jv!4m7!1m0!1m5!1m1!1s0x3be7ebd3d21315eb:0x9347748f5219ceec!2m2!1d73.1400878!2d19.0718375?entry=ttu&g_ep=EgoyMDI2MDExMS4wIKXMDSoASAFQAw%3D%3D"
                             className="bg-green-600 text-white p-2 rounded-full min-h-[48px] min-w-[48px] flex items-center justify-center"
                         >
-                            <MessageCircle size={18} />
+                            <MapPin size={18} />
                         </a>
                         <button
                             onClick={toggleMenu}

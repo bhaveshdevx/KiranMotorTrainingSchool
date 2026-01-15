@@ -14,13 +14,32 @@ const Contact = () => {
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Handle form submission logic here (e.g., API call)
-        console.log('Form submitted:', formData);
-        alert('Thank you! We will call you back shortly.');
-        setFormData({ name: '', mobile: '', vehicle: 'Car' });
+
+        const formDataToSend = new FormData();
+        formDataToSend.append("entry.1259226965", formData.name); // Full Name
+        formDataToSend.append("entry.2098211916", formData.mobile); // Mobile
+        formDataToSend.append("entry.1451852394", formData.vehicle); // Vehicle Type
+
+        try {
+            await fetch(
+                "https://docs.google.com/forms/d/e/1FAIpQLSdsDq_q8OfNelPoWortcv4TzNh47BR43v-oP7Xo6twjOiSFTA/formResponse", // Replace FORM_ID with your Google Form ID
+                {
+                    method: "POST",
+                    mode: "no-cors", // Important for Google Forms
+                    body: formDataToSend,
+                }
+            );
+
+            alert('Thank you! We will call you back shortly.');
+            setFormData({ name: '', mobile: '', vehicle: 'Car' });
+        } catch (err) {
+            console.error('Error submitting form:', err);
+            alert('Something went wrong. Please try again.');
+        }
     };
+
 
     return (
         <div className="container mx-auto px-4 py-8 max-w-2xl">
@@ -34,7 +53,7 @@ const Contact = () => {
 
                 {/* WhatsApp Button */}
                 <a
-                    href="https://wa.me/919876543210" // Replace with actual number
+                    href="https://wa.me/917045638762"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 w-full bg-[#25D366] hover:bg-[#20bd5a] text-white text-xl font-bold py-4 rounded-xl shadow-md transition-transform transform hover:scale-[1.02] mb-8 min-h-[60px]"
@@ -97,9 +116,10 @@ const Contact = () => {
                                 onChange={handleChange}
                                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-yellow focus:border-transparent outline-none transition-all appearance-none bg-white min-h-[48px]"
                             >
-                                <option value="Car">Car Training</option>
-                                <option value="Bike">Bike Training</option>
-                                <option value="Rickshaw">Rickshaw / Heavy Vehicle</option>
+                                <option value="Car License">Car License</option>
+                                <option value="Bike License">Bike License</option>
+                                <option value="Truck License">Truck License</option>
+                                <option value="Other">Other</option>
                             </select>
                             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
                                 <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
