@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div className="flex flex-col">
             <SEO
-                title="Best Driving School in Devichapada"
+                title="Kiran Motor Training School"
                 description="Learn to drive in 20 days with Kiran Motor Training School. Expert instructors, flexible timings, and affordable rates in Devichapada since 2014."
                 keywords="driving school, panvel, devichapada, learn driving, car training, license"
                 canonical="/"
