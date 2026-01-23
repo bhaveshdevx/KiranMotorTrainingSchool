@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Menu, X, Phone, MessageCircle, MapPin } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import UnderConstruction from './UnderConstruction';
-import logo from '../assets/images/logo-3.png';
+import logo from '../assets/images/logo-4.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <div className="flex items-center">
                         <Link to="/">
-                            <img src={logo} alt="Logo" className="w-10" />
+                            <img src={logo} alt="Logo" className="w-16" />
                         </Link>
                     </div>
 

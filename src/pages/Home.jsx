@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import CoursesSection from '../components/CoursesSection';
 import ServicesList from '../components/ServicesList';
 import drive from "../assets/images/drive 2.png";
+
 const Home = () => {
     return (
         <div className="flex flex-col">
@@ -19,7 +20,7 @@ const Home = () => {
                             animate={{ opacity: 1, y: 0 }}
                             className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight"
                         >
-                            Learn to Drive in <span className="text-white bg-brand-black px-2 transform -skew-x-6 inline-block">15 Days</span>
+                            Learn to Drive in <span className="text-white bg-brand-black px-2 transform -skew-x-6 inline-block">20 Days</span>
                         </motion.h1>
                         <p className="text-lg md:text-xl text-white mb-8 font-medium">
                             Become a confident driver with our expert training. Safe, easy, and affordable.

@@ -1,16 +1,16 @@
 import React from 'react';
-import { CheckCircle, MapPin, Calendar, FileText, UserCheck } from 'lucide-react';
+import { CheckCircle, UserStar, Calendar, FileText, UserCheck } from 'lucide-react';
 
 const ServicesList = () => {
     const features = [
         {
             id: 1,
-            text: 'Doorstep Pickup & Drop Service',
-            icon: <MapPin className="text-brand-yellow flex-shrink-0" size={24} />,
+            text: 'Experienced & Certified Instructors',
+            icon: <UserStar className="text-brand-yellow flex-shrink-0" size={24} />,
         },
         {
             id: 2,
-            text: 'Sunday & Weekend Batches Available',
+            text: 'Flexible Batches Available',
             icon: <Calendar className="text-brand-yellow flex-shrink-0" size={24} />,
         },
         {

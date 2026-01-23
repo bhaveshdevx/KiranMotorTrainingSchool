@@ -15,12 +15,28 @@ const Footer = () => {
                         <Link to="/" className="hover:text-brand-yellow transition-colors">Home</Link>
                         <Link to="/contact" className="hover:text-brand-yellow transition-colors">Contact</Link>
                         <Link to="/" className="hover:text-brand-yellow transition-colors">Privacy Policy</Link>
+
                     </div>
                 </div>
 
                 <div className="border-t border-gray-700 mt-6 pt-6 text-center text-xs text-gray-500">
-                    &copy; {new Date().getFullYear()} Kiran Motor Training School. All rights reserved.
+                    <p>
+                        &copy; {new Date().getFullYear()} Kiran Motor Training School. All rights reserved.
+                    </p>
+
+                    <p className="mt-1">
+                        Illustrations by{" "}
+                        <a
+                            href="https://storyset.com/city"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline hover:text-brand-yellow"
+                        >
+                            Storyset
+                        </a>
+                    </p>
                 </div>
+
             </div>
         </footer>
     );
