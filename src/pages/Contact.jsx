@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { MessageCircle, Phone, Send } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ContactWithFrame from '../components/ContactWithFrame';
+import SEO from '../components/SEO';
+
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -43,6 +45,12 @@ const Contact = () => {
 
     return (
         <div className="container mx-auto px-4 py-8 max-w-2xl">
+            <SEO
+                title="Contact Us - Driving Admissions"
+                description="Contact Kiran Motor Training School in Devichapada for driving lessons. Call or WhatsApp us today to book your trial class."
+                keywords="contact driving school, driving school phone number, kiran motor contact"
+                canonical="/contact"
+            />
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

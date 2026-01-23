@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /under-construction
+
+Sitemap: https://YOUR_DOMAIN.com/sitemap.xml

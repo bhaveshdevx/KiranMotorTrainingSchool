@@ -6,9 +6,17 @@ import CoursesSection from '../components/CoursesSection';
 import ServicesList from '../components/ServicesList';
 import drive from "../assets/images/drive 2.png";
 
+import SEO from '../components/SEO';
+
 const Home = () => {
     return (
         <div className="flex flex-col">
+            <SEO
+                title="Best Driving School in Devichapada"
+                description="Learn to drive in 20 days with Kiran Motor Training School. Expert instructors, flexible timings, and affordable rates in Devichapada since 2014."
+                keywords="driving school, panvel, devichapada, learn driving, car training, license"
+                canonical="/"
+            />
             {/* Hero Section */}
             {/* <img height={200} width={200} src={driveGif} alt="" /> */}
             <section style={{ backgroundImage: `url(${drive})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
