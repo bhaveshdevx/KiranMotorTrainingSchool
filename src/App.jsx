@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import ContactWithFrame from './components/ContactWithFrame';
 import UnderConstruction from './components/UnderConstruction';
 import RoadSafetyGuide from './components/RoadSafetyGuide';
+import { Analytics } from "@vercel/analytics/next"
 function App() {
   return (
     <BrowserRouter>
